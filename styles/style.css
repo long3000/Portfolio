@@ -1,0 +1,284 @@
+@media screen and (max-width: 500px) {
+    .square {
+        float: left;
+    }
+
+    .top-content {
+        order: 1;
+        height: 100px;
+        width: 100%;
+    }
+
+    .right-col {
+        order: 3;
+        height: 200px;
+        width: 100%;
+    }
+
+    .left-col {
+        order: 2;
+        height: 100px;
+        width: 100%;
+    }
+
+    .bottom-content {
+        order: 4;
+        height: 750px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 900px) {
+    .top-content {
+        order: 1;
+        height: 150px;
+        width: 100%;
+    }
+
+    .top-content .logo {
+        height: 14vw;
+        width: 14vw;
+    }
+
+    .right-col {
+        order: 3;
+        height: 400px;
+        width: 70%;
+    }
+
+    .right-col .center-img {
+        height: 350px;
+        width: 320px;
+        display: block;
+        margin: auto;
+    }
+
+    .left-col {
+        order: 2;
+        height: 400px;
+        width: 30%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        border-right: #000 solid 3px;
+    }
+
+    .left-col .square {
+        height: 100px;
+        width: 60%;
+        top: 12%;
+        float: left;
+        margin: auto;
+    }
+
+    .left-col .square:first-child {
+        margin-left: auto;
+    }
+
+    .bottom-content {
+        order: 4;
+        height: 550px;
+        width: 100%;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .bottom-content .thumb {
+        height: auto;
+        width: 45%;
+        font-weight: 700;
+        padding-right: 10px;
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 901px) {
+    .top-content {
+        order: 1;
+        height: 200px;
+        width: 100%;
+    }
+
+    .top-content .logo {
+        height: 160px;
+        width: 160px;
+    }
+
+    .top-content #name {
+        font-size: 55px;
+        font-weight: 700;
+    }
+
+    .top-content #subname {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .right-col {
+        order: 3;
+        height: 400px;
+        width: 75%;
+    }
+
+    .right-col .center-img {
+        height: 350px;
+        width: 320px;
+        display: block;
+        margin: auto;
+    }
+
+    .left-col {
+        order: 2;
+        height: 400px;
+        width: 25%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        border-right: #000 solid 3px;
+    }
+
+    .left-col .square {
+        height: 100px;
+        width: 60%;
+        top: 12%;
+        float: left;
+        margin: auto;
+    }
+
+    .left-col .square:first-child {
+        margin-left: auto;
+    }
+
+    .bottom-content {
+        order: 4;
+        height: 300px;
+        width: 100%;
+        font-weight: 700;
+    }
+
+    .bottom-content .thumb {
+        height: 200px;
+        width: 30%;
+        display: inline-block;
+    }
+
+    .bottom-content .thumb:nth-child(1) {
+        padding-left: 20px;
+    }
+
+    .bottom-content img {
+        border-radius: 30%;
+    }
+}
+
+body {
+    min-width: 320px;
+    padding-top: 50px;
+}
+
+.content {
+    vertical-align: middle;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.top-content {
+    display: inline-block;
+}
+
+.top-content > * {
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+}
+
+.top-content p {
+    text-align: right;
+    padding-right: 3em;
+}
+
+.logo {
+    height: 15vw;
+    width: 15vw;
+    background-color: #fff;
+    float: left;
+    margin-left: 3em;
+    background-image: url(http://cameronwp.github.io/cpcom/static/udacity_logo.svg);
+    background-size: cover;
+    border-radius: 50%;
+    border: 5px orange solid;
+}
+
+#name {
+    font-size: 5vw;
+    font-weight: 700;
+}
+
+#subname {
+    font-size: 2vmax;
+    font-weight: 700;
+}
+
+.square {
+    height: 70px;
+    width: 30%;
+    background-color: red;
+    border: 2px solid #fff;
+    transition-duration: 1s;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    margin-right: 5px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.square:first-child {
+    margin-left: 3vw;
+}
+
+.square > p {
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.center-img {
+    height: 180px;
+    width: 180px;
+    display: block;
+    margin: auto;
+}
+
+.center-img > img {
+    height: auto;
+    width: auto;
+    max-height: 100%;
+    max-width: 100%;
+    margin: 10px auto auto;
+    display: block;
+    border: orange 2px solid;
+}
+
+.bottom-content {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+.thumb {
+    height: 230px;
+    width: 70%;
+    font-weight: 700;
+    margin: auto;
+    padding-right: 50px;
+    margin: 0 auto;
+}
+
+.thumb img {
+    border: #000 1px solid;
+}
